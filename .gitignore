@@ -2,5 +2,7 @@
 WORKSPACE/
 venv/
 _pycache_
+__pycache__/
 .idea/
 *.xml
+*.log
