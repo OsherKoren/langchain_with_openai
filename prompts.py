@@ -2,7 +2,7 @@
 # !/usr/bin/env python
 
 """This module contains the prompts for the use cases."""
-
+from typing import Optional
 
 import connect
 from langchain.prompts import PromptTemplate

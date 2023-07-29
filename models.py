@@ -12,8 +12,9 @@ def set_openai_model(model_name: str = "gpt-3.5-turbo", temperature: float = 0.2
     model = OpenAI(
         model_name=model_name,
         temperature=temperature,
-        max_tokens=kwargs.get("max_tokens", 4000),
     )
+    for key, value in kwargs.items():
+        setattr(model, key, value)
     return model
 
 
@@ -21,8 +22,9 @@ def set_openai_chat_model(model_name: str = "gpt-3.5-turbo", temperature: float 
     model = ChatOpenAI(
         model_name=model_name,
         temperature=temperature,
-        max_tokens=kwargs.get("max_tokens", 4000),
     )
+    for key, value in kwargs.items():
+        setattr(model, key, value)
     return model
 
 

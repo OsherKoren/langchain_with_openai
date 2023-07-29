@@ -5,9 +5,11 @@
 
 import openai
 import os
+import serpapi
 
 from dotenv import load_dotenv, find_dotenv
 
 _ = load_dotenv(find_dotenv())  # read local .env file
 
 openai.api_key = os.getenv("OPENAI_API_KEY")
+serpapi.api_key = os.getenv("SERPAPI_API_KEY")

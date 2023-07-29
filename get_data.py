@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/env python
 
-"""This module is for loading data from local files."""
+"""This module is for loading data """
 
-from langchain.document_loaders import BSHTMLLoader, CSVLoader, PyMuPDFLoader, TextLoader
+from langchain.document_loaders import BSHTMLLoader, CSVLoader, PyMuPDFLoader, S3FileLoader, TextLoader
 
 
 def load_txt_file(file_path: str):
@@ -44,3 +44,12 @@ def read_txt_file(file_path: str):
     with open(file_path) as f:
         file = f.read()
     return file
+
+
+def load_from_s3(s3_uri: str):
+    if s3_uri.startswith("s3://"):
+        s3_uri = s3_uri[5:]
+    bucket, key = s3_uri.split("/", 1)
+    loader = S3FileLoader(bucket, key)
+    return loader.load()
+

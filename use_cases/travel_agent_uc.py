@@ -22,7 +22,7 @@ def run_travel_agent(text: str):
 if __name__ == "__main__":
     history = ChatMessageHistory()
     history.add_ai_message("Hello, I'm your travel agent. What can I do for you?")
-    text = "I want to go to the Allgau area in Germany. Can you build me an itinerary for 7 days?"
+    text = "I want to go to the Allgau area in Germany. Can you build me an itinerary for 8 days?"
     ai_response = run_travel_agent(text)
     history.add_ai_message(ai_response.content)
 
