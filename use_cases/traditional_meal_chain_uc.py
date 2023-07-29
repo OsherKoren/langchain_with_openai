@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/env python
+
+"""This module is for running the traditional meal chain use case."""
+
 import warnings
 warnings.filterwarnings("ignore")
 

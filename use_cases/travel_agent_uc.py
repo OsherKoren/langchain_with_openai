@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/env python
 
+"""This module is for running the travel agent use case."""
+
 from langchain.memory import ChatMessageHistory
 import models, prompts
 

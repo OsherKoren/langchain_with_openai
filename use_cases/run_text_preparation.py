@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/env python
+
+"""This module is for running the text preparation use case."""
+
 import os
 
 import get_data

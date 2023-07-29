@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/env python
 
+"""This module is for loading data from local files."""
 
 from langchain.document_loaders import BSHTMLLoader, CSVLoader, PyMuPDFLoader, TextLoader
 

@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/env python
 
+"""This module is for setting up the models."""
+
 from langchain.llms import OpenAI
 from langchain.chat_models import ChatOpenAI
 

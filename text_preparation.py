@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/env python
+
+"""This module contains the prompts for the use cases."""
+
+
 from typing import List, Union
 
 from langchain.embeddings import OpenAIEmbeddings

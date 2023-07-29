@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/env python
+
+"""This module is for recipe use case"""
+
 import json
 import re
 from typing import List

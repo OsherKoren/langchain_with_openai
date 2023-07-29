@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/env python
 
+"""This module is for connecting to the OpenAI API."""
+
 import openai
 import os
 

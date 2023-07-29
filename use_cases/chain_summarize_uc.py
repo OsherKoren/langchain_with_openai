@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 # !/usr/bin/env python
+
+"""This module if for chain summarization use case"""
+
 import warnings
 warnings.filterwarnings("ignore")
 
