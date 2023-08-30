@@ -28,6 +28,6 @@ def run_db_agent(url, llm, query):
 
 if __name__ == "__main__":
     llm = models.set_openai_model(temperature=0)
-    query = "How many rooms are there in Manhattan?"
+    query = "How many rooms were rented in Manhattan from January to June 2021?"
     response = run_db_agent(url=connection_string, llm=llm, query=query)
     print(response)
